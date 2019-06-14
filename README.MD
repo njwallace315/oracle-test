@@ -3,7 +3,9 @@ I'm using this primarily to test connections on a server that does not have node
 
 This can simply be run with the docker image <a>njwallace315/oracle-test</a> or it can be modified and built from this repo.
 
-There is a script that will handle the setup of the oracle instanclient drivers which are included in this repo.
+There is a script that will handle the setup of the oracle instanclient drivers if they are present.
+
+If using this repo as opposed to the docker image you will need to download the oracle instantclient 18.5 files for linux from the oracle website. Once downloaded add the folder to the app directory and name it "instantclient_18_5" or something to match that filename in init_instantclient.sh  
 
 To run from docker image with an environment file:  
     1. Create an environment file "oracle.env" with the following variables as they pretain to the mssql package.  
